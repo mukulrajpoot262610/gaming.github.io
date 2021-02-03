@@ -1,0 +1,413 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+::selection{
+    color: #dc3545;
+    background-color: transparent
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+
+/* --------------------------------- nav bar start --------------------------------------- */
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.7;
+    z-index: -1;
+    background: linear-gradient(to right, #2b0d0f 0%, #462121 0%, #460d0d 100%);
+}
+
+.logo{
+    height: 30px;
+    width: 70px;
+}
+
+.nav-item a{
+    color: white !important;
+}
+
+/* --------------------------------- nav bar end --------------------------------------- */
+
+/* --------------------------------- header starts --------------------------------------- */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #991e24 0%, #cd3c3c 0%, #f61616 100%);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.header-buttons a:hover{
+    color: red;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div h1{
+    font-size: 60px;
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+
+/* -------------------------------------------header ends ------------------------------------ */
+
+/* -------------------------------------------header extra div starts ------------------------------------ */
+
+.fas{
+    color: #dc3545 !important;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 1.1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/* -------------------------------------------header extra three div ends------------------------------------ */
+
+/* -------------------------------------------service offer div start------------------------------------ */
+
+.serviceoffers{
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    height: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* -------------------------------------------service offer div end------------------------------------ */
+
+/* -------------------------------------------more than start------------------------------------ */
+
+.project-work{
+    margin: 100px 0;
+}
+
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* -------------------------------------------more than end------------------------------------ */
+
+/* -------------------------------------------pricing starts------------------------------------ */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg, #dc3545 55%, #fff 0%);
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #060606;
+}
+
+.card{
+    transition: 0.3s ease;
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff !important;
+    padding: 25px 0 !important;
+}
+
+.card-body{
+    padding: 30px 0 !important;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.card-footer{
+    padding: 25px 0 !important;
+}
+
+.card-footer a{
+    border: 3px solid #dc3545;
+    border-left: 3px solid #dc3545;
+    border-right: 3px solid #dc3545;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #dc3545;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.card-footer a{
+    color: white;
+    background-color: #dc3545;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* -------------------------------------------pricing end------------------------------------ */
+
+
+/* -------------------------------------------contact start------------------------------------ */
+
+.contact{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding: 80px 0;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(333deg, #dc3545 55%, #fff 0);
+    z-index: -1;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dc3545 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,0.5);
+}    
+
+.btn-primary {
+        color: #dc3545;
+        background-color: #fff;
+        border-color: #dc3545;
+        border-width: 3px;
+        border-radius: 100px;
+        padding: 12px 35px;
+}    
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #fff;
+} 
+
+/* -------------------------------------------contact end------------------------------------ */
+
+
+/* <!-- -------------------------------------------projects starts------------------------------------ --> */
+  
+.project{
+    height: 100vh;
+    width: 100vw;
+    background: #f7f7f9;
+    padding: 50px;
+}
+
+.project h2{
+    font-size: 1.1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.project p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+    text-align: center;
+}
+
+
+    
+/* <!-- -------------------------------------------projects ends------------------------------------ --> */
+    
+
+
+/* -------------------------------------------footer start------------------------------------ */
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #dc3545;
+    position: relative;
+}
+
+.footersection h3{
+    color: #fff;
+}
+
+.footersection p{
+    color: #fff;
+}
+
+.footersection a{
+    color: #fff;
+}
+
+.input-group-text{
+    color: #fff;
+    border: 1px solid #ced4da;
+    background-color: #dc3545;
+}
+
+/* -------------------------------------------footer end------------------------------------ */
